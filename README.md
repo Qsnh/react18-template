@@ -29,7 +29,6 @@
 - 路由切换动画（Framer Motion）
 - 自动 document 标题管理
 - Skeleton 加载状态
-- 移动端调试工具（VConsole）
 
 ## 🚀 技术栈
 
@@ -49,7 +48,6 @@
 - **Zustand 5.0.8** - 轻量级状态管理
 - **Axios 1.3.4** - HTTP 客户端
 - **Mitt 3.0.1** - 事件总线
-- **VConsole 3.15.1** - 移动端调试
 
 ## 📁 项目结构
 
