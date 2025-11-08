@@ -52,6 +52,13 @@ const Login: React.FC = () => {
 
   return (
     <div className="login-page">
+      {/* Floating light circles/halos */}
+      <div className="light-circle circle-1"></div>
+      <div className="light-circle circle-2"></div>
+      <div className="light-circle circle-3"></div>
+      <div className="light-circle circle-4"></div>
+      <div className="light-circle circle-5"></div>
+
       <div className="login-container">
         <h1 className="login-title">欢迎登录</h1>
         <Form

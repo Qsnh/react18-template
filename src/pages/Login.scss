@@ -3,14 +3,18 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 50%, #f5f3ff 100%);
+  position: relative;
+  overflow: hidden;
 
   .login-container {
     width: 400px;
     padding: 40px;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    position: relative;
+    z-index: 10;
 
     .login-title {
       text-align: center;
@@ -36,5 +40,130 @@
       color: #999;
       font-size: 12px;
     }
+  }
+
+  // Floating light circles/halos
+  .light-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 1;
+
+    &.circle-1 {
+      width: 200px;
+      height: 200px;
+      background: rgba(147, 197, 253, 0.5); // soft blue
+      top: 10%;
+      left: 15%;
+      animation: float1 30s ease-in-out infinite;
+    }
+
+    &.circle-2 {
+      width: 250px;
+      height: 250px;
+      background: rgba(251, 207, 232, 0.5); // soft pink
+      top: 60%;
+      right: 10%;
+      animation: float2 35s ease-in-out infinite;
+    }
+
+    &.circle-3 {
+      width: 180px;
+      height: 180px;
+      background: rgba(196, 181, 253, 0.4); // soft purple
+      bottom: 15%;
+      left: 10%;
+      animation: float3 40s ease-in-out infinite;
+    }
+
+    &.circle-4 {
+      width: 150px;
+      height: 150px;
+      background: rgba(147, 197, 253, 0.4); // soft blue
+      top: 30%;
+      right: 20%;
+      animation: float4 25s ease-in-out infinite;
+    }
+
+    &.circle-5 {
+      width: 220px;
+      height: 220px;
+      background: rgba(252, 231, 243, 0.6); // very soft pink
+      bottom: 25%;
+      right: 25%;
+      animation: float5 38s ease-in-out infinite;
+    }
+  }
+}
+
+// Keyframe animations for floating circles
+@keyframes float1 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(30px, -50px);
+  }
+  50% {
+    transform: translate(-20px, -30px);
+  }
+  75% {
+    transform: translate(40px, 20px);
+  }
+}
+
+@keyframes float2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-40px, 30px);
+  }
+  66% {
+    transform: translate(30px, -40px);
+  }
+}
+
+@keyframes float3 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(25px, 35px);
+  }
+  40% {
+    transform: translate(-35px, 15px);
+  }
+  60% {
+    transform: translate(-15px, -25px);
+  }
+  80% {
+    transform: translate(20px, -30px);
+  }
+}
+
+@keyframes float4 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-50px, 40px);
+  }
+}
+
+@keyframes float5 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(35px, -25px);
+  }
+  60% {
+    transform: translate(-25px, -35px);
+  }
+  90% {
+    transform: translate(15px, 30px);
   }
 }
