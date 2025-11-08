@@ -4,7 +4,6 @@ import Sidebar from "./Sidebar";
 import Header from "./Header";
 import Breadcrumb from "../Breadcrumb";
 import RouteTransition from "../RouteTransition";
-import KeepAlive from "../KeepAlive";
 import "./BasicLayout.scss";
 
 const BasicLayout: React.FC = () => {
@@ -22,11 +21,7 @@ const BasicLayout: React.FC = () => {
         <div className="main-content">
           <Breadcrumb />
           <RouteTransition>
-            <KeepAlive
-              max={10}
-              include={["/dashboard", "/user/list"]}
-              exclude={[]}
-            />
+            <Outlet />
           </RouteTransition>
         </div>
       </div>

@@ -14,8 +14,6 @@ export interface RouteMeta {
   roles?: string[];
   /** 是否在菜单中隐藏 */
   hideInMenu?: boolean;
-  /** 是否缓存页面 */
-  keepAlive?: boolean;
   /** 面包屑名称（如果不设置，使用 title） */
   breadcrumbName?: string;
 }

@@ -44,7 +44,6 @@ const lazyLoad = (element: React.ReactElement) => (
  *   - requireAuth: 是否需要登录
  *   - roles: 需要的角色权限
  *   - hideInMenu: 是否在菜单中隐藏
- *   - keepAlive: 是否缓存页面
  *   - breadcrumbName: 面包屑名称
  */
 const routes: AppRouteObject[] = [
@@ -81,7 +80,6 @@ const routes: AppRouteObject[] = [
           title: "仪表盘",
           icon: "DashboardOutlined",
           requireAuth: true,
-          keepAlive: true,
         },
       },
 
@@ -102,7 +100,6 @@ const routes: AppRouteObject[] = [
               title: "用户列表",
               icon: "UserOutlined",
               requireAuth: true,
-              keepAlive: true,
             },
           },
           // 用户详情（在菜单中隐藏）
