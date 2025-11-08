@@ -4,7 +4,6 @@
 
   .sidebar {
     width: 250px;
-    background: #001529;
     overflow-y: auto;
     transition: width 0.2s;
 
@@ -17,10 +16,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      color: rgba(0, 0, 0, 0.85);
       font-size: 18px;
       font-weight: bold;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       transition: all 0.2s;
       overflow: hidden;
       white-space: nowrap;

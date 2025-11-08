@@ -75,7 +75,7 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed }) => {
         {collapsed ? "RT" : "React Template"}
       </div>
       <Menu
-        theme="dark"
+        theme="light"
         mode="inline"
         selectedKeys={selectedKeys}
         defaultOpenKeys={getOpenKeys()}
